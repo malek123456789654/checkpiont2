@@ -1,0 +1,23 @@
+ALGORITHM checkpiont3
+VAR
+ PROCEDURE dot_product(v1,v2: array of integer )
+ 
+     FOR i FROM 0 TO 2 STEP 1  DO
+         write(v1[i])
+         write(v2[i])
+         
+     END_FOR
+     END
+VAR
+     i,ps:INTEGER;
+     BEGIN
+ BEGIN
+ ps:=0;
+ ok:=false;
+     FOR i FROM 0 TO 2 STEP 1  DO
+        ps=ps+v1[i]*v2[i];
+       
+     END_FOR
+      if (ps=0)then 
+        write(ok)
+ END  
